@@ -3,6 +3,8 @@ class Dogs
 
     def initialize(name)
         @name = name
+        @breed = "Criollo"
+        @age = 1
     end
 
     def bark

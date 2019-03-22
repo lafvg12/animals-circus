@@ -17,6 +17,10 @@ RSpec.describe Dogs do
         it "responds to property :age" do
             expect(logan).to respond_to(:age)
         end
+
+        it "dogs should be name 'Logan el grande'" do
+            expect(logan.name).to eq("Logan el grande")
+        end
     end
 
     context "Testing the methods" do
@@ -25,6 +29,6 @@ RSpec.describe Dogs do
             expect(logan.bark).to eq("guau guau")
         end
 
-        
+
     end
 end

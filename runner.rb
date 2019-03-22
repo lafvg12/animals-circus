@@ -4,6 +4,10 @@ choky = Dogs.new("choky")
 mateo = Dogs.new("Mateo")
 logan = Dogs.new("Logan")
 
+puts "============JUGANDO========="
+puts choky.name
+puts "Raza: #{choky.breed}"
 puts choky.bark
-puts mateo.bark
-puts logan.bark
+puts "Edad: #{choky.age} año"
+puts
+
