@@ -24,5 +24,7 @@ RSpec.describe Dogs do
         it "the dog must bark (guau guau)" do
             expect(logan.bark).to eq("guau guau")
         end
+
+        
     end
 end
