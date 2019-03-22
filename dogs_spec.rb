@@ -1,26 +1,28 @@
 require_relative 'dogs'
 
 RSpec.describe Dogs do
+    logan = Dogs.new('Logan el grande') # faltaba el initialize
+   
     # Properties
-    it "responds to property :name" do
-        logan = Dogs.new('Logan el grande') # faltaba el initialize
-        expect(logan).to respond_to(:name)
+    context "Testing Properties" do
+        it "responds to property :name" do
+            expect(logan).to respond_to(:name)
+        end
+
+        # breed ::: RAZA
+        it "responds to property :breed" do
+            expect(logan).to respond_to(:breed)
+        end
+
+        it "responds to property :age" do
+            expect(logan).to respond_to(:age)
+        end
     end
 
-    # breed ::: RAZA
-    it "responds to property :breed" do
-        logan = Dogs.new("Logan el grande")
-        expect(logan).to respond_to(:breed)
-    end
-
-    it "responds to property :age" do
-        logan = Dogs.new ("Logan el grande")
-        expect(logan).to respond_to(:age)
-    end
-
+    context "Testing the methods" do
     # Methods
-    it "the dog must bark (guau guau)" do
-        logan = Dogs.new("Logan el grande")
-        expect(logan.bark).to eq("guau guau")
+        it "the dog must bark (guau guau)" do
+            expect(logan.bark).to eq("guau guau")
+        end
     end
 end
