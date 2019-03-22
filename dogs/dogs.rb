@@ -10,5 +10,10 @@ class Dogs
     def bark
         "guau guau"
     end
+
+    def jump
+        "estoy saltando"
+    end
+    
 end
 

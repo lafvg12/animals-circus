@@ -9,5 +9,5 @@ puts choky.name
 puts "Raza: #{choky.breed}"
 puts choky.bark
 puts "Edad: #{choky.age} año"
-puts
+puts choky.jump
 

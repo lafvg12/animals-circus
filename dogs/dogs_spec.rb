@@ -29,6 +29,11 @@ RSpec.describe Dogs do
             expect(logan.bark).to eq("guau guau")
         end
 
+        it "When jumping, you must return 'estoy saltando'" do
+            expect(logan.jump).to eq("estoy saltando")
+        end
+       
+        
 
     end
 end
