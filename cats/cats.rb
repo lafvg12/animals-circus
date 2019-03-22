@@ -1,12 +1,5 @@
-class Cats
-    attr_reader :name, :breed, :age
-    def initialize(name)
-    end
-    
-    def jump 
-        "estoy saltando"
-    end
+require_relative '../animal'
 
-    
+class Cats < Animal
     
 end

@@ -1,19 +1,8 @@
-class Dogs
-    attr_reader :name, :breed, :age
+require_relative '../animal'
 
-    def initialize(name)
-        @name = name
-        @breed = "Criollo"
-        @age = 1
-    end
-
+class Dogs < Animal
     def bark
         "guau guau"
-    end
-
-    def jump
-        "estoy saltando"
-    end
-    
+    end  
 end
 
